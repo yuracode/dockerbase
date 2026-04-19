@@ -1,0 +1,63 @@
+/* リセット */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ヘッダー */
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+header h1 { font-size: 1.4rem; }
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 16px;
+  font-size: 0.95rem;
+}
+nav a:hover { text-decoration: underline; }
+
+/* メイン */
+main {
+  max-width: 720px;
+  margin: 40px auto;
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.logo {
+  width: 100px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* テーブル */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+th, td {
+  border: 1px solid #dee2e6;
+  padding: 10px 14px;
+  text-align: left;
+}
+th { background: #e9ecef; width: 30%; }
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: #888;
+}

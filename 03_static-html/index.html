@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Dockerfile ビルド サイト</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>📦 Dockerfile ビルド サイト</h1>
+    <nav>
+      <a href="index.html">ホーム</a>
+      <a href="profile.html">プロフィール</a>
+    </nav>
+  </header>
+  <main>
+    <img src="img/docky.jpeg" alt="Docker Logo" class="logo">
+    <p>このサイトは <strong>Dockerfile でビルドされたイメージ</strong> で動いています。</p>
+    <p>ファイルは <code>COPY</code> コマンドでイメージの中に焼き込まれています。<br>
+       変更を反映するには <strong>再ビルド</strong> が必要です。</p>
+    <table>
+      <tr><th>起動方法</th><td>docker image build → docker container run</td></tr>
+      <tr><th>ファイルの場所</th><td>イメージ内（コンテナに同梱）</td></tr>
+      <tr><th>変更の反映</th><td>再ビルドが必要</td></tr>
+      <tr><th>本番向き</th><td>✓（どこでもそのまま動く）</td></tr>
+    </table>
+  </main>
+  <footer>
+    <p>Docker Handson — 03 静的HTMLサイト（Dockerfile）</p>
+  </footer>
+</body>
+</html>
