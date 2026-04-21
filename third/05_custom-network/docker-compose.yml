@@ -1,0 +1,20 @@
+services:
+  app:
+    build: ../03_node-postgres
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+    networks:
+      - my-network
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: secret
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
